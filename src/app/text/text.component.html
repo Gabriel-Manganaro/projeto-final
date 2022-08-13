@@ -1,0 +1,22 @@
+<app-header></app-header>
+
+
+<div>
+  
+    <h3>{{ dados.nomes | uppercase }}</h3>
+    <br>
+    <img src="https://www.lego.com/cdn/cs/set/assets/blt2934af9b5f14b5c1/60282_alt1.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1" width="300px" height="250px">
+    <br>
+    <p> {{ dados.precos | currency: 'R$' }}</p>
+    <br>
+    <button (click)= "comprar()" >Comprar</button>
+    <br>
+    <br>
+    <br>
+    <h3>{{ dado.nome | uppercase }}</h3>
+    <img src="https://media.juguetesland.com/product/lego-city-policia-persecucion-en-helicoptero-800x800.jpg" width="300px" height="250px" >
+    <p>{{ dado.preco | currency: 'R$' }}</p>
+    <br>
+    <button (click)="comprar()">Comprar</button>
+    
+</div>
