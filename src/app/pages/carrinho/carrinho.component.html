@@ -1,4 +1,5 @@
-<div *ngFor="let produtos of produto">
+<app-header></app-header>
+<div *ngFor="let produtos of itens">
     <h3>{{ produtos.nome | uppercase }}</h3>
     <br>
     <img src="{{ produtos.imagem }}" width="300px" height="" >
@@ -6,5 +7,5 @@
     <br>
     <p> {{ produtos.preco | currency: 'R$' }}</p>
     <br>
-    <button (click)= "comprar(produtos)" >Comprar</button>  
 </div>
+<app-footer></app-footer>

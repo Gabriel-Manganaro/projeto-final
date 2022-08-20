@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
 import { HeaderComponent } from '../cabecalho/header.component';
 import { TextComponent } from '../text/text.component';
+import { ServiceService } from '../service/service.service';
 
 
 
@@ -11,7 +12,8 @@ import { TextComponent } from '../text/text.component';
   declarations: [
     FooterComponent,
     HeaderComponent,
-    TextComponent
+    TextComponent,
+    
   ],
 
   imports: [
@@ -22,6 +24,7 @@ import { TextComponent } from '../text/text.component';
     FooterComponent,
     HeaderComponent,
     TextComponent,
+    
     
    
   ]

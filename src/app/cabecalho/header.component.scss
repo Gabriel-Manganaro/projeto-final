@@ -1,11 +1,21 @@
 h1{
     font-size: 200%;
     cursor: pointer;
-    box-sizing: content-box;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    border: 0.75cm solid #00eeff ;
+    background-color: #00eeff;
+    border-block-start-color: #00eeff;
 }
+
 li{
     text-align: right;
     list-style: none;
     cursor:pointer ;
     height: 25px ; 
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+    border: 0.05cm solid #d4caca ;
+    flex-direction: row;
 }

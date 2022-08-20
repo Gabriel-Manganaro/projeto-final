@@ -9,6 +9,10 @@ export class LoginComponent implements OnInit {
 
   constructor() { }
 
+  loginEfetuado(){
+    alert("Login Efetuado")
+  };
+
   ngOnInit(): void {
   }
 

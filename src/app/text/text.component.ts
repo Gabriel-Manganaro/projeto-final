@@ -1,15 +1,7 @@
-export interface dados{
-  nomes: string;
-  preco: number;
-}
-
-export interface dado {
-  nomes:string
-  valor:number
-}
 
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ServiceService } from '../service/service.service';
 
 @Component({
   selector: 'app-text',
@@ -21,27 +13,15 @@ import { Router } from '@angular/router';
 
 export class TextComponent implements OnInit {
 
-  dados={
+  produto:Array<any>=[]
 
-    nomes :"Lego City Controle de Incêndios",
-    precos: 199.99
-  
+  constructor(private router:Router,private service:ServiceService) {
+    this.produto=this.service.getProduts()
   }
 
-  dado={
-  
-    nome :"Lego City Perseguição de Helicóptero da Polícia",
-    preco: 299.99
-    
-  };
-  
 
-  constructor(private router:Router) { 
-    
-  }
-
-  comprar(){
-    alert("Compra Efetuada")
+  comprar(item:any){
+    this.service.produtosComprados.push(item)
   };
 
   login(){
@@ -54,8 +34,7 @@ export class TextComponent implements OnInit {
 
   navigateByUrl(url:string){
     this.router.navigateByUrl(url)
-  }
-
+  };
 
   ngOnInit(): void {
   };

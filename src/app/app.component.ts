@@ -1,4 +1,12 @@
+export interface dados{
+  nome: string;
+  imagem:string;
+  preco: number;
+  id:number;
+}
 import { Component } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-root',
@@ -9,3 +17,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'final';
 }
+
+
