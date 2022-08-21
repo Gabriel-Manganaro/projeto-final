@@ -7,5 +7,9 @@
     <br>
     <p> {{ produtos.preco | currency: 'R$' }}</p>
     <br>
+    <button (click)="remover(produtos)">Remover Produto</button>
 </div>
+<p>Total: {{total}}</p>
+<br>
+<button (click)="finish()">Finalizar Compra</button>
 <app-footer></app-footer>

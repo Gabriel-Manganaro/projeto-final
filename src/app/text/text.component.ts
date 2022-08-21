@@ -21,8 +21,9 @@ export class TextComponent implements OnInit {
 
 
   comprar(item:any){
-    this.service.produtosComprados.push(item)
-  };
+    this.service.produtosComprados.push(item);
+    alert('item adicionado com sucesso!');
+  }
 
   login(){
     alert("Login Efetuado")

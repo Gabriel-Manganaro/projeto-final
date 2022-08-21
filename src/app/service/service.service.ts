@@ -65,4 +65,13 @@ produtosComprados: Array<dados>=[]
      return this.produtosComprados;
   }
 
+  removeProduto(prod: dados){
+   let index = this.produtosComprados.findIndex(e => {return e.id == prod.id});
+   this.produtosComprados.splice(index, 1);
+  }
+
+  reset(){
+    this.produtosComprados = [];
+  }
+
 }
